@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @article.name %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @article.price %>
+</p>
+
+<%= link_to 'Edit', edit_article_path(@article) %> 
+<%= link_to 'Destroy', method: :delete, data: { confirm: 'Are you sure?' } %>
+<%= link_to 'Back', articles_path %>
